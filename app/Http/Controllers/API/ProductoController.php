@@ -29,6 +29,7 @@ class ProductoController extends Controller
         $borrarproducto= new producto();
         $borrarproducto= producto::find($id);
         $borrarproducto-> delete();
+        return response()->json("Ya se elimino el producto",202);
         return response()->json(["producto"=>producto::all()],202);
     }
 

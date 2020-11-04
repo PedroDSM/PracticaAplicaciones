@@ -13,4 +13,8 @@ class comentarios extends Model
      */
     protected $table = 'comentarios';
     public $timestamps = false;
+
+    public function producto(){
+        return $this->hasmany('App\Modelos\producto');
+    }
 }

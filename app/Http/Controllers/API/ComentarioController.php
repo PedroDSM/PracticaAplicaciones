@@ -40,4 +40,5 @@ class ComentarioController extends Controller
        if($new->save())
        return response()->json(["comentario"=>$new],200);
     }
+
 }

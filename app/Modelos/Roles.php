@@ -4,15 +4,13 @@ namespace App\Modelos;
 
 use Illuminate\Database\Eloquent\Model;
 
-class producto extends Model
+class Roles extends Model
 {
     /**
      * The table associated with the model.
      * 
      * @vas string
      */
-    protected $table = 'productos';
-    public $timestamps = false;
-
+protected $table ='roles';
 
 }
